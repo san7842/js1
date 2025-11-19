@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .box1 {
+            width:200px;
+            height:150px;
+
+         }
+    </style>
+    <!-- <script>
+     let myInterval;
+      function myData(){
+        document.getElementById("demo").innerHTML+="hi i am sandeep";
+      }
+      function mystart(){
+      myInterval=setInterval(myData,1000);
+      }
+      function mystop(){
+        clearInterval(myInterval);
+      }
+    </script> -->
+
+     <script>
+     let myInterval;
+      function myData(){
+        document.getElementById("demo").innerHTML+="happy birthday you";
+      }
+      function mystart(){
+      myInterval=setTimeout(myData,5000);
+      }
+      function mystop(){
+        clearTimeout(myInterval);
+      }
+    </script>
+</head>
+<body>
+    <!-- <button onclick="mystart()">Start</button>
+    <button onclick="mystop()">Stop</button>
+    <h1 id="demo">Welcome</h1> -->
+
+    <button onclick="mystart()">Start</button>
+    <button onclick="mystop()">Stop</button>
+    <h1 id="demo">
+        
+    welcome
+    </h1>
+    
+</body>
+</html>

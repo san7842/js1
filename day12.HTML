@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo"></h1>
+    <script>
+        // const d=new Date();
+        // console.log(d);
+        // document.write("<h1>",d ,"</h1>");
+
+        // const d=new Date("2004-06-25" );
+        // document.write("<h1>",d,"</h1>");
+        // const d1=new Date("2004/06/25");
+        // document.write("<h1>",d1,"</h1>");
+        // const d2=new Date("May 25 2015" );
+        // document.write("<h1>",d2,"</h1>");
+        // const d3=new Date("25 May 2015");
+        // document.write("<h1>",d3,"</h1>");
+
+        // let msec=Date.parse("july 27,2005" );
+        // document.write("<h1>",msec,"</h1>");
+        
+        // let msec=Date.parse("Feb 4,2001" );
+        // let mysec=Date.parse("Nov 8,2025");
+
+        // document.write("<h1>",mysec-msec,"</h1>");
+        function myDate(){
+            const date=Date.now();
+            document.getElementById("demo").innerHTML=date;
+        }
+        setInterval(myDate,1000);
+            </script>
+</body>
+</html>
