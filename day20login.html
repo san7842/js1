@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function userLogin(){
+            let mynm=document.getElementById('uname').value;
+            window.localStorage.setItem("user",mynm);
+            alert(" You are succedfully login")
+        }
+    </script>
+</head>
+<body>
+    <a href="day20index.html">Home</a>
+    <a href="day20login.html">Login</a>
+    <a href="day20display.html">Display</a>
+    <a href="day20contact.html">Contact</a>
+
+    <hr>
+    <h1>Login page</h1>
+    Enter Your name:<input type="text" id="uname">
+
+    <button onclick="userLogin()">login</button>
+</body>
+</html>

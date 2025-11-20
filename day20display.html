@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function logout(){
+            localStorage.clear();
+            window.location.href="http://127.0.0.1:5500/day20index.html"
+        }
+    </script>
+</head>
+<body>
+    <a href="day20index.html">Home</a>
+    <a href="day20login.html">Login</a>
+    <a href="day20display.html">Display</a>
+    <a href="day20contact.html">Contact</a>
+
+    <hr>
+    <div id="demo"></div>
+    <script>
+        let name=localStorage.getItem("user");
+        document.getElementById("demo").innerHTML="welcome : "+ name+
+        "!<a href='#' onclick='logout()'>Logout</a>";
+    </script>
+    <h1>Display page</h1>
+    Enter Your name:<input type="text" id="">
+
+    <script>
+        localStorage.setItem("username")
+    </script>
+</body>
+</html>
