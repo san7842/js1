@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!-- <h1 id="demo"> welcome</h1>
+   <script type="module>
+   import {name,age} from "./day22.js" ;
+   document.getElementById("demo").innerHTML="My name is " +name + "age" +age+ ;
+   </script> {% endcomment %}
+
+   <h1 id="demo"> welcome</h1>
+   <script type="module">
+   import myName from "./day22.js";
+   document.getElementById("demo").innerHTML=myName();
+   </script> -->
+   <!-- <h1 id="demo"> welcome</h1>
+   <h1 id="demo1"> hello</h1>
+   <script typr="module">
+    import abc from "./day22.js";
+    import {rollno,name,city} from "./day22.js";
+    document.getElementById("demo").innerHTML=abc();
+    document.getElementById("demo1").innerHTML="Rollno:" +rollno+ "Name :" +name+ "City :"+ city ;
+   </script> -->
+   <h1 id="demo"> welcome</h1>
+   <script>
+    const student=[
+        {
+            "rollno":121,
+            "name":"saurabh",
+            "city":"bhopal",
+            "fees":45600
+        },
+        {
+            "rollno":122,
+            "name":"sarth",
+            "city":"indore",
+            "fees":45600
+        },
+        {
+            "rollno":123,
+            "name":"mohan",
+            "city":"jabalpur",
+            "fees":45800
+        },
+
+        {
+            "rollno":124,
+            "name":"rahul",
+            "city":"rewa",
+            "fees":45400
+        }
+
+    ]
+    let Mytab=`<table border="1" width="500">
+        <tr>
+            <th>Rollno</th>
+            <th>Name</th>
+            <th>City</th>
+            <th>Fees</th>
+        </tr>`
+        student.map((key)=>{
+            Mytab+=`<tr>
+                <td>${key.rollno}</td>
+                <td>${key.name}</td>
+                <td>${key.city}</td>
+                <td>${key.fees}</td>
+                </tr>`
+
+        },)
+        Mytab+="</table>";
+        document.getElementById("demo").innerHTML=Mytab;
+   </script>
+</body>
+</html>
