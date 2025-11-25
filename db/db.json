@@ -1,34 +1,22 @@
-{"student":
-[
-    {
-        "rollno":121,
-        "name":"sandeep",
-        "city":"bhopal",
-        "fees":22000
-    },
-     {
-        "rollno":122,
-        "name":"rohan",
-        "city":"rewa",
-        "fees":23000
-    },
-     {
-        "rollno":123,
-        "name":"mandeep",
-        "city":"ratalam",
-        "fees":24000
-    },
-     {
-        "rollno":124,
-        "name":"pradeep",
-        "city":"jabalpur",
-        "fees":25000
-    },
-     {
-        "rollno":125,
-        "name":"rahul",
-        "city":"indore",
-        "fees":26000
-    }
 
-]}
+
+{
+    "products":[
+        {
+            "id":1,
+            "name":"sandeep",
+            "price":25000,
+            "city":"indore",
+            "contact":455667
+        },
+        {
+            "id":2,
+            "name":"rahul",
+            "price":26000,
+            "city":"bhopal",
+            "contact":4558895
+        }
+
+
+    ]
+}

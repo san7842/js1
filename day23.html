@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script>
+    <!-- <script>
 
         async function display(){
             let api="http://localhost:3000/student";
@@ -31,11 +31,42 @@
             Table+="</table>";
             document.getElementById("demo").innerHTML=Table;
         }
-    </script>
+    </script> -->
+<script>
+    async function display(){
+        let api="http://localhost:3000/student";
+        const myobj=await fetch(api);
+        const MyData=await myobj.json();
+        let Table=`<table border="1" width="500">
+            <tr>
+                <td>Rollno</td>
+                <td>Name</td>
+                <td>City</td>
+                <td>Fees</td>
+                </tr>
+
+            `
+           MyData.map((key)=>{
+            Table+=` 
+            <tr>
+                <td>${key.rollno}</td>
+                <td>${key.name}</td>
+                <td>${key.city}</td>
+                <td>${key.fees}</td>
+            </tr>
+                `
+           }) 
+            Table+="</table>";
+            document.getElementById("demo").innerHTML=Table;
+                 
+    }
+</script>
 </head>
 <body>
     <button onclick="display()">show Data</button>
     <hr>
     <p id="demo"></p>
+
+
 </body>
 </html>
