@@ -1,22 +1,25 @@
-
-
 {
-    "products":[
-        {
-            "id":1,
-            "name":"sandeep",
-            "price":25000,
-            "city":"indore",
-            "contact":455667
-        },
-        {
-            "id":2,
-            "name":"rahul",
-            "price":26000,
-            "city":"bhopal",
-            "contact":4558895
-        }
-
-
-    ]
+  "products": [
+    {
+      "id": "1",
+      "name": "sandeep",
+      "price": 25000,
+      "city": "indore",
+      "contact": 455667
+    },
+    {
+      "id": "2",
+      "name": "rahul",
+      "price": 26000,
+      "city": "bhopal",
+      "contact": 4558895
+    },
+    {
+      "id": "7342",
+      "name": "printer",
+      "price": "45000",
+      "city": "rewa",
+      "contact": "78425689"
+    }
+  ]
 }

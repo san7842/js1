@@ -1,0 +1,27 @@
+document.getElementById("btn1").addEventListener("click",mySearch);
+async function mySearch(){
+    let name=document.getElementById("name").value;
+
+    let api=`http://localhost:3000/products/?name${name}`;
+    const myobj=await fetch(api);
+    const myData=await myobj.json();
+    let Table=`<table border="1" width="600" align="center" bgcolor="pink">
+    <tr>
+    <th>product</th>
+        <th>price</th>
+            <th>city</th>
+                <th>contact</th>
+                </tr>
+    `
+    myData.map((key)=>{
+        Table+=`
+        <tr>
+    <td>${key.name}</td>
+        <td>${key.price}</td>
+            <td>${key.city}</td>
+                <td>${key.contact}</td>
+                </tr>`
+    })
+    Table+="</table>";
+    document.getElementById("demo").innerHTML=Table;
+}

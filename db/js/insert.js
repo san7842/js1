@@ -18,6 +18,6 @@ async function dataSave(){
             "city":pcity,
            "contact":pcontact 
         })
-        } )
-        alert("Data succefully save!!1")
+    })
+        alert("Data succefully save!!1");
 }
