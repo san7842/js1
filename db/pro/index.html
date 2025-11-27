@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myFun(){
+            let myobj=document.createElement("button");
+            myobj.innerHTML="please click";
+            document.getElementById("demo").appendChild(myobj);
+        }
+    </script>
+</head>
+<body>
+    <button onclick="myFun()">Click here</button>
+    <p id="demo"></p>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+        #demo{
+            border:3px solid grey;
+            width:180px;
+           
+            padding:20px;
+        }
+        #gap{
+            margin:10px;
+        }
+        </style> -->
+    <!-- <script>
+        function myFun(){
+            let myobj=document.createElement("input");
+            myobj.type="text";
+            myobj.id="gap"
+            document.getElementById("demo").appendChild(myobj);
+        } -->
+            <script>
+        function myFun(){
+            let val=document.getElementById("ipt").value ;
+
+            let myobj=document.createElement("option");
+            myobj.innerHTML=val;
+            document.getElementById("demo").appendChild(myobj);
+        }
+    </script>
+</head>
+<body>
+   
+    <!-- <button onclick="myFun()">add</button>
+    <p id="demo"></p> -->
+     Enter Subject:<input type="text" id="ipt">
+    <button onclick="myFun()">add</button>
+    <br>
+    <br>
+    <select id="demo">
+
+    </select>
+    
+</body>
+</html>
