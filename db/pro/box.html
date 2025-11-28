@@ -29,7 +29,15 @@
             let myobj=document.createElement("option");
             myobj.innerHTML=val;
             document.getElementById("demo").appendChild(myobj);
+        
+            
         }
+        function remove() {
+               let val= document.getElementById("demo1").value;
+                  val.remove();
+    }
+
+        
     </script>
 </head>
 <body>
@@ -43,6 +51,8 @@
     <select id="demo">
 
     </select>
+    <button onclick="remove()">Delete</button>
+    
     
 </body>
 </html>

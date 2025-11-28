@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function addData(){
+            let myobj=document.getElementById("button");
+            myobj.innerHTML="save!!";
+            myobj.id="demo1";
+            document.getElementById("demo").appendChild("myobj");
+        }
+        function removeData(){
+            let element=document.getElementById("demo1");
+            element.remove();
+            alert("remove element");
+        }
+    </script>
+</head>
+<body>
+    <button onclick="addData()">add element</button>
+    <button onclick="removeData()">Delete</button>
+    <p id="demo">Welcome</p>
+
+</body>
+</html>
